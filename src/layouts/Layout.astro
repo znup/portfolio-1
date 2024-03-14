@@ -70,6 +70,7 @@ const { title, description } = Astro.props;
 		font-family: 'Onest Variable', sans-serif;
 		background: #13151a;
 		background-size: 224px;
+		scroll-behavior: smooth;
 	}
 	code {
 		font-family:
@@ -81,5 +82,10 @@ const { title, description } = Astro.props;
 			Bitstream Vera Sans Mono,
 			Courier New,
 			monospace;
+	}
+	@media (prefer-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
 	}
 </style>
