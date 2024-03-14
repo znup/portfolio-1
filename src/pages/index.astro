@@ -3,13 +3,17 @@ import Layout from '../layouts/Layout.astro';
 import Presentation from '../components/Presentation.astro';
 import Experience from '../components/Experience.astro';
 import SecContainer from '../components/SecContainer.astro';
+import Spacer from '../components/Spacer.astro';
+import Title from '../components/Title.astro';
 ---
 
 <Layout title="Portfolio del equipo devs 404 - Desarrolladores, programadores y Diseñadores web"
 		description="Portfolio del equipo devs 404 - Desarrolladores, programadores y Diseñadores web con mas de 5 años de experiencia">
 	<main class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white">
-		<SecContainer>
+		<SecContainer class="py-36">
 			<Presentation />
+			<Spacer class="py-16" />
+			<Title />
 			<Experience />
 		</SecContainer>
 	</main>

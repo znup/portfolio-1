@@ -1,3 +1,6 @@
-<section class="w-full lg:w-[740px] mx-auto py-36 relative">
+---
+const { class: className } = Astro.props
+---
+<section class=`w-full lg:w-[740px] mx-auto relative ${className}`>
   <slot />
 </section>
