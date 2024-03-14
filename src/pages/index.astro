@@ -2,12 +2,15 @@
 import Layout from '../layouts/Layout.astro';
 import Presentation from '../components/Presentation.astro';
 import Experience from '../components/Experience.astro';
+import SecContainer from '../components/SecContainer.astro';
 ---
 
 <Layout title="Portfolio del equipo devs 404 - Desarrolladores, programadores y Diseñadores web"
 		description="Portfolio del equipo devs 404 - Desarrolladores, programadores y Diseñadores web con mas de 5 años de experiencia">
 	<main class="h-full overflow-x-hidden bg-default text-default text-base selection:bg-secondary selection:text-white">
-		<Presentation />
-		<Experience />
+		<SecContainer>
+			<Presentation />
+			<Experience />
+		</SecContainer>
 	</main>
 </Layout>
