@@ -10,21 +10,21 @@ import MailIcon  from "../icons/Mail.astro"
 ---
 
 
-  <h1 class="relative flex flex-row justify-center items-baseline gap-x-4 text-2xl font-bold">
+  <h1 class="relative flex flex-row justify-center items-baseline gap-x-2 lg:gap-x-4 text-sm lg:text-2xl font-bold">
     Hola!, Somos el equipo 
-    <span class="text-5xl gradient-text">404,</span>
-    <div class="absolute right-[-45%] top-[30%] flex justify-center items-center">
+    <span class="text-xl lg:text-5xl gradient-text">404,</span>
+    <div class="absolute bottom-[40px] lg:right-[-45%] lg:top-[30%] flex justify-center items-center">
       <Badge>Listos para sumergirnos en tu proyecto</Badge>
     </div>
   </h1>
   
-  <h2 class="lg:w-[740px] pt-5 text-xl text-center opacity-80">
+  <h2 class="lg:w-[740px] pt-2 lg:pt-5 text-base leading-4 lg:text-xl text-center opacity-80">
     Con más de 5 años de experiencia, 
     somos desarrolladores web con sede en México. 
     Nos destacamos en la creación de aplicaciones web únicas y sorprendentes.
   </h2>
 
-  <nav class="flex flex-row justify-center items-center gap-x-2 pt-5">
+  <nav class="flex flex-col justify-center items-center gap-y-2 gap-x-2 pt-5 md:flex-row">
     <SocialPill>
       <FigmaIcon class='size-6'/>
       Figma
